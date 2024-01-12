@@ -1,5 +1,6 @@
 import Clipboard from "@/components/clipboard";
 import FeatureCard from "@/components/feature-card";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { GeistMono } from "geist/font/mono";
 
@@ -47,6 +48,9 @@ export default function Home() {
 						speed by up to 70%.
 					</FeatureCard>
 				</div>
+			</section>
+			<section className="w-10/12 flex items-center justify-center">
+				<Footer />
 			</section>
 		</main>
 	);
