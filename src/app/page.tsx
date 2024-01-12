@@ -43,8 +43,8 @@ export default function Home() {
 						A framework for developing applications powered by language models.
 					</FeatureCard>
 					<FeatureCard title="Million.js support">
-						A fast and lightweight virtual DOM that can improve React's speed by
-						up to 70%.
+						A fast and lightweight virtual DOM that can improve React&apos;s
+						speed by up to 70%.
 					</FeatureCard>
 				</div>
 			</section>
