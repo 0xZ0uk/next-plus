@@ -10,10 +10,11 @@ import {
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
+import { ModeToggle } from "./mode-toggle";
 
 const Header = () => {
 	return (
-		<header className="w-full h-16 flex items-center justify-between bg-background text-foreground px-16">
+		<header className="w-10/12 h-16 flex items-center justify-between text-foreground">
 			<div>
 				<span className="font-bold">Next+</span>
 			</div>
@@ -30,19 +31,17 @@ const Header = () => {
 						<NavigationMenuItem>
 							<Link href="/#guide" legacyBehavior passHref>
 								<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-									Guide
+									Getting Started
 								</NavigationMenuLink>
 							</Link>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<Link href="/#examples" legacyBehavior passHref>
-								<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-									Examples
-								</NavigationMenuLink>
-							</Link>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<Link href="/#github" legacyBehavior passHref>
+							<Link
+								href="https://github.com/0xZ0uk/create-next-plus"
+								target="_blank"
+								legacyBehavior
+								passHref
+							>
 								<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 									GitHub
 								</NavigationMenuLink>
@@ -51,7 +50,9 @@ const Header = () => {
 					</NavigationMenuList>
 				</NavigationMenu>
 			</div>
-			<div></div>
+			<div>
+				<ModeToggle />
+			</div>
 		</header>
 	);
 };
