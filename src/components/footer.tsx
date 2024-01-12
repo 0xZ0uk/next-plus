@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import { GeistMono } from "geist/font/mono";
-import { GeistSans } from "geist/font/sans";
 import React from "react";
 
 const Footer = () => {
